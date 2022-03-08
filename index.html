@@ -5,12 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ASB - Accessibility Settings Bar</title>
+    <!--Acessibilidade-->
     <link rel="stylesheet" href="src/icons/fontawesome5.9.0/css/all.css" />
     <link rel="stylesheet" href="src/css/default.css" />
     <link rel="stylesheet" href="src/css/asb.css" />
   </head>
   <body>
-    <article>
+   
+   
+    <!--Vlibras-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  
+    <style>
+      .access-button {
+        width: 40% !important;
+        border-radius: 50px !important;
+        border: 5px solid #ffffff1f !important;
+      }
+      </style>
+
+    <!--Vlibras-->
+   
+   
+      <article>
       <a href="https://github.com/brenonovelli/Accessibility-Settings-Bar">
         <i class="fab fa-github"></i> View on github
       </a>
@@ -135,10 +161,13 @@
       </form>
     </article>
 
+    <!--acessibilidade-->
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
     ></script>
     <script type="text/javascript" src="src/js/asb.js"></script>
+  
+  
   </body>
 </html>
